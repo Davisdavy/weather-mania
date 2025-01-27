@@ -19,7 +19,7 @@ dependencies:
   shared_preferences: ^2.4.0
   hugeicons: ^0.0.7
   page_transition: ^2.2.1
-  flutter_dotenv: ^5.0.2
+  flutter_dotenv: ^5.2.1
   intl: ^0.20.0
   another_flushbar: ^1.12.20
   shimmer: ^3.0.0
@@ -37,6 +37,7 @@ flutter:
 
   assets:
     - assets/images/
+    - .env
 
   fonts:
     - family: Roboto
