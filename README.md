@@ -81,7 +81,7 @@ The app gracefully handles the following errors:
 - **API Errors**: Shows a generic error message for server-related issues.
 
 ## Screenshots
-table>
+<table>
   <tr>
     <td>Weather Screen</td>
      <td>City Search Screen</td>
