@@ -81,9 +81,10 @@ The app gracefully handles the following errors:
 - **API Errors**: Shows a generic error message for server-related issues.
 
 ## Screenshots
-![Weather  Page](/assets/images/city_weather.jpeg "Weather Page")
-![Search City](/assets/images/city_seach.jpeg "Search City")
-![City Forecast](/assets/images/city_forecast.jpeg "City Forecast")
+
+:----------------------------------------------------------------:|:------------------------------------------------------------:|:-------------------------------------------------------------------:
+![Weather  Page](/assets/images/city_weather.jpeg "Weather Page") | ![Search City](/assets/images/city_seach.jpeg "Search City") | ![City Forecast](/assets/images/city_forecast.jpeg "City Forecast")
+
 
 ### Challenges and Solutions
 #### Challenges Faced
