@@ -16,7 +16,7 @@ A mobile application built with Flutter that fetches and displays weather data f
 ## Installation
 - Flutter SDK: Ensure you have Flutter installed. If not, follow the official Flutter installation [guide](https://docs.flutter.dev/get-started/install).
 
-- OpenWeather API Key: Use the provided API key (cfe577b09f43deea2722462eea76e473) or replace it with your own in the .env file.
+- OpenWeather API Key
 
 - Dart SDK: Comes bundled with Flutter.
 
