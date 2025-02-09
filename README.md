@@ -114,6 +114,75 @@ The app gracefully handles the following errors:
 1. Add support for location-based weather using GPS.
 
 2. Support multiple cities and allow users to save their favorite locations.
+
+## Contributing
+We welcome contributions from the community! Whether you're fixing a bug, improving documentation, or adding a new feature, your help is appreciated. Here's how you can contribute:
+
+#### Branching Strategy
+`main` branch: This branch contains the stable, production-ready code. Direct commits to this branch are restricted.
+
+`develop` branch: This is the default branch for development. All contributions should be made by creating a feature branch from develop and submitting a pull request (PR) to merge back into develop.
+
+#### Steps to Contribute
+1. **Fork the Repository:** Click the "Fork" button on the top right of the repository page to create your own copy.
+
+2. **Clone the Repository:**
+```
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+```
+3. **Create a Feature Branch:**
+Create a new branch from the `develop` branch for your changes:
+
+```
+git checkout develop
+git checkout -b feature/your-feature-name
+```
+4. **Make Your Changes:**
+
+* Write your code and ensure it follows the project's coding standards.
+* 
+* Add tests if applicable.
+* 
+* Update documentation if needed.
+
+5. **Commit Your Changes:**
+Commit your changes with a clear and descriptive commit message:
+
+```
+git commit -m "Add: [Your feature description]"
+```
+6. **Push Your Changes:**
+Push your branch to your forked repository:
+
+```
+git push origin feature/your-feature-name
+```
+7. **Create a Pull Request (PR):**
+* Go to the original repository on GitHub.
+* Click on the "Pull Requests" tab and then "New Pull Request."
+* Select develop as the base branch and your feature branch as the compare branch.
+* Provide a clear title and description for your PR, explaining the changes and their purpose.
+
+8. **Code Review:**
+* Your PR will be reviewed by maintainers. They may suggest changes or improvements.
+* Once approved, your changes will be merged into the develop branch.
+
+9. **Critical Fixes:**
+* For critical bug fixes or security patches, create a PR directly to the main branch. Ensure the PR is clearly labeled as a critical fix.
+
+#### Code Guidelines
+* Follow the existing code style and structure.
+* Write clear and concise commit messages.
+* Ensure your code is well-documented and includes comments where necessary.
+* Add or update tests for any new functionality or bug fixes.
+
+#### Reporting Issues
+If you find a bug or have a feature request, please open an issue on GitHub. Provide as much detail as possible, including steps to reproduce the issue or a description of the feature.
+
+#### Code of Conduct
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
