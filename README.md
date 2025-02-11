@@ -119,9 +119,7 @@ The app gracefully handles the following errors:
 We welcome contributions from the community! Whether you're fixing a bug, improving documentation, or adding a new feature, your help is appreciated. Here's how you can contribute:
 
 #### Branching Strategy
-`main` branch: This branch contains the stable, production-ready code. Direct commits to this branch are restricted.
-
-`develop` branch: This is the default branch for development. All contributions should be made by creating a feature branch from develop and submitting a pull request (PR) to merge back into develop.
+`main` branch: This branch contains the stable, production-ready code. Direct commits to this branch are restricted.It is also the default branch. All contributions should be made by creating a feature branch from `main` and submitting a pull request (PR) to merge back into it.
 
 #### Steps to Contribute
 **1. Fork the Repository:** Click the "Fork" button on the top right of the repository page to create your own copy.
