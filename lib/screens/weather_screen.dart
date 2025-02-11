@@ -133,15 +133,24 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           color: textColor,
                           size: 22.0,
                         ),
-                        Text(
-                          weatherProvider.currentWeather?.cityName ?? 'Loading...',
-                          style: TextStyle(color: textColor),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              weatherProvider.currentWeather?.cityName ?? 'Loading...',
+                              style: TextStyle(color: textColor),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                              child: Icon(
+                                weatherProvider.isSearchBarVisible ? Icons.keyboard_arrow_up_rounded : Icons.keyboard_arrow_down_rounded,
+                                color: textColor,
+                                size: 18.0,
+                              ),
+                            ),
+                          ],
                         ),
-                        Icon(
-                          weatherProvider.isSearchBarVisible ? Icons.keyboard_arrow_up_rounded : Icons.keyboard_arrow_down_rounded,
-                          color: textColor,
-                          size: 18.0,
-                        ),
+
                       ],
                     ),
                   ),
