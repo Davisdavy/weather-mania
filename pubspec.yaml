@@ -24,6 +24,8 @@ dependencies:
   another_flushbar: ^1.12.20
   shimmer: ^3.0.0
   timeago:
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
 
 dev_dependencies:
   flutter_test:
