@@ -1,9 +1,11 @@
 import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:hugeicons/hugeicons.dart';
 import 'package:intl/intl.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
+import 'package:weathermania/providers/location_handler.dart';
 import 'package:weathermania/providers/theme_provider.dart';
 import 'package:weathermania/providers/weather_provider.dart';
 import 'package:weathermania/screens/full_forecast_screen.dart';
@@ -68,7 +70,10 @@ class _WeatherScreenState extends State<WeatherScreen> {
   }
 
   Future<String> _getCurrentCity() async {
-    return "Nairobi";
+    Position? position = await LocationHandler.getCurrentPosition();
+    String? city = await LocationHandler.getCityFromLatLong(position!);
+
+    return city ?? "Nairobi"; // Default to Nairobi if city retrieval fails
   }
 
   void _showErrorDialog(BuildContext context, String errorMessage, VoidCallback onRetry) {
@@ -138,7 +143,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           children: [
                             Text(
                               weatherProvider.currentWeather?.cityName ?? 'Loading...',
-                              style: TextStyle(color: textColor),
+                              style: TextStyle(color: textColor,fontSize: 16),
                             ),
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 8.0),
